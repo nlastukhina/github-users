@@ -2,7 +2,7 @@ import React, { FC, FormEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LocaleSwitcher } from '@features/locale/components/LocaleSwitcher/LocaleSwitcher';
 import './Header.css';
-import { useHistory, useLocation } from 'react-router-dom';
+import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import { LocationState } from '@features/users/types';
 
 export const Header: FC = () => {
@@ -33,9 +33,13 @@ export const Header: FC = () => {
         <nav className="header__navigation">
           <ul className="header__navigation-list">
             <li className="header__navigation-list-item">
-              <a href="/" className="header__navigation-link">
+              <NavLink
+                to="/"
+                aria-current={location.pathname === '/' ? 'page' : undefined}
+                className="header__navigation-link"
+              >
                 {t('site_title')}
-              </a>
+              </NavLink>
             </li>
             {user && (
               <li className="header__navigation-list-item">
