@@ -1,0 +1,8 @@
+.locale-switcher__dropdown-menu {
+  width: 172px;
+}
+
+.locale-switcher__dropdown-menu .locale-switcher-menu__option {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,31 @@
+.locale-switcher-button {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-white);
+}
+
+.locale-switcher-button:hover {
+  color: var(--color-accent);
+}
+
+.locale-switcher-button__text {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.locale-switcher-button__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0);
+}
+
+.locale-switcher-button--opened .locale-switcher-button__icon {
+  transform: rotate(180deg);
+}

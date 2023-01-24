@@ -1,0 +1,19 @@
+.user-item {
+  display: flex;
+  align-items: center;
+}
+
+.user-image-container {
+  margin-right: 10px;
+}
+
+.user-item__image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-item__text {
+  margin-top: 4px;
+}

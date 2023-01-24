@@ -1,0 +1,23 @@
+{
+  "site_title": "GitHub users",
+  "locale_selected": "Selected language",
+  "offline_notification_text": "The website is offline. Check your network access",
+  "user_list_users_section_aria_label": "GitHub users",
+  "user_profile_repositories_title": "Repositories",
+  "user_profile_all_repositories_link": "All repositories",
+  "user_profile_user_section_aria_label": "User information",
+  "user_profile_repositories_section_aria_label": "List of repositories",
+  "user_followers_one": "follower",
+  "user_followers_other": "followers",
+  "user_following_one": "following",
+  "user_following_other": "following",
+  "search_page_loading_message": "Search",
+  "search_page_search_result_title": "Users found",
+  "search_page_search_result_nothing_found_title": "Nothing found",
+  "search_global_input_placeholder": "User search",
+  "search_global_button_action": "Search",
+  "repository_one": "repository",
+  "repository_few": "repositories",
+  "repository_many": "repositories",
+  "repository_other": "repositories"
+}

@@ -1,0 +1,29 @@
+.locale-switcher-menu__option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-black);
+  cursor: pointer;
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+}
+
+.locale-switcher-menu__option:focus-visible {
+  outline: none;
+  box-shadow: var(--inner-focus-border);
+}
+
+.locale-switcher-menu__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.locale-switcher-menu__option:hover .locale-switcher-menu__text {
+  color: var(--color-accent);
+}
+
+.locale-switcher-menu__check {
+  color: var(--color-accent);
+}
