@@ -18,11 +18,7 @@ export const UsersSearchPage: FC = () => {
     setLoading(true);
     setSearchParam(params.get('query'));
 
-    fetch(`https://api.github.com/search/users?q=${query}`, {
-      headers: new Headers({
-        Authorization: 'token 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',
-      }),
-    })
+    fetch(`https://api.github.com/search/users?q=${query}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.items.length == 0) {

@@ -6,11 +6,7 @@ export const UsersPage: FC = () => {
   const [usersList, setUserList] = React.useState<UserAPI[]>([]);
 
   React.useEffect(() => {
-    fetch('https://api.github.com/users' || '', {
-      headers: new Headers({
-        Authorization: 'token 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',
-      }),
-    })
+    fetch('https://api.github.com/users' || '')
       .then((response) => response.json())
       .then((data) => {
         setUserList(data);

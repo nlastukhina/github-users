@@ -13,11 +13,7 @@ export const UserItem: FC<Props> = ({ user }) => {
   const [userData, setUserData] = React.useState<Partial<UserAPI>>({});
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${user.login}`, {
-      headers: new Headers({
-        Authorization: 'token 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',
-      }),
-    })
+    fetch(`https://api.github.com/users/${user.login}`)
       .then((response) => response.json())
       .then((data) => {
         setUserData({ company: data.company, public_repos: data.public_repos });

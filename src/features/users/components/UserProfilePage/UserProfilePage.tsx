@@ -11,19 +11,11 @@ export const UserProfilePage: FC = () => {
   const [repos, setRepos] = React.useState<Repos[] | null>(null);
 
   React.useEffect(() => {
-    fetch(`https://api.github.com/users/${id}`, {
-      headers: new Headers({
-        Authorization: 'token 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',
-      }),
-    })
+    fetch(`https://api.github.com/users/${id}`)
       .then((response) => response.json())
       .then(setUser);
 
-    fetch(`https://api.github.com/users/${id}/repos`, {
-      headers: new Headers({
-        Authorization: 'token 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',
-      }),
-    })
+    fetch(`https://api.github.com/users/${id}/repos`)
       .then((response) => response.json())
       .then(setRepos);
   }, [id]);
